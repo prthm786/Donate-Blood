@@ -1,0 +1,34 @@
+/* Nav Bar */
+.cointainer-fluid{
+    margin-bottom: 80px;
+}
+
+.navbar-brand{
+    color:  #e04d2ce8 !important;
+    font-weight: 900;
+
+}
+
+nav .navbar-nav li a{
+    color:  #e04d2ce8 !important;
+    font-weight :500;
+    }
+
+   /*Sign In  */
+h3{
+    text-align: center;
+    color :#e04d2ce8;
+}
+.red-line{
+    width:15%;
+    background-color:#e04d2ce8;
+}
+
+
+.form-cointainer{
+    margin : 3% 30% 7%;
+    padding: 20px 15px; 
+    border : 5px solid #eee;
+    border-radius: 5px;
+    
+}
