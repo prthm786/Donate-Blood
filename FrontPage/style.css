@@ -1,0 +1,271 @@
+
+body{
+ margin: 0;
+    box-sizing: border-box;
+   
+}
+/* .cont1, .cont2 , .cont3,.cont4 , .cont5{
+    border: #df6101 5px solid;
+} */
+
+.container{
+    display: grid;
+    grid-template-rows: 50px 500px 300px 550px 300px;
+    grid-gap: 0px;
+     
+}
+
+button ,input {
+    color: #ffffff;
+    background-color:#df6101; 
+    border-radius: 15px;
+    padding: 5px;
+    border: white;
+}
+
+/*........................................................................................................................................................................*/ 
+
+
+/* box1 start */
+
+nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    background-color: white;
+    
+}
+
+.NAVBAR H4{
+    float: left;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #df6101;
+}
+
+.NAVBAR li{
+    float: left;
+    list-style: none;
+    padding: 0 9px 0 9px;
+    
+}
+ 
+.NAVBAR ul {
+    float: right;
+    padding-right: 20px;
+}
+
+.NAVBAR li a{
+   text-decoration: none;
+   color:#df6101;
+   font-weight: bold;
+}
+
+.NAVBAR{
+   /* border: #ece5e0 2px dotted;
+    border-radius: 20px; */
+    height: 50px;
+     margin-top: 0;
+}
+
+ 
+/* box1 end  */
+ /*........................................................................................................................................................................*/ 
+
+
+
+/* box2 start */
+.cont2{
+    background: url(header.png) no-repeat center fixed ;
+}
+.con2{
+    position: relative;
+   text-align: center;
+}
+
+#main{
+    position: absolute;
+    left: 539px;
+    top: 41px;
+    color: #ffffff;
+}
+
+#search{
+    position: absolute;
+    left: 590px;
+    top: 153px;
+    color: #ffffff;
+}
+
+.con2 p{
+    position: absolute;
+    left: 579px;
+    top: 85px;
+    color: rgba(130, 128, 128, 0.964);
+}
+
+.Haryana{
+    position: absolute;
+    left: 422px;
+    top: 265px;
+}
+
+.BLOOD-GROUP{
+    position: absolute;
+    left: 568px;
+    top: 265px;
+}
+.btn-submit{
+    position: absolute;
+    left: 929px;
+    top: 265px;
+}
+
+ .con2 hr{
+    position: absolute;
+    left: 558px;
+    top: 205px;
+    border: #ffffff 4px solid;
+    border-bottom: none;
+    width: 20%;
+}
+
+input{
+    width: 135px;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 30px;
+    font-size: larger;
+}
+
+select{
+    width: 120px;
+    /* font-weight: bold; */
+    height: 50px;
+    border-radius: 30px;
+    font-size: larger;
+}
+
+#bloodgrp{
+    width:300px ;
+}
+
+/* box2 end */
+ /*........................................................................................................................................................................*/ 
+
+
+
+/* box3 start */
+
+.cont3{
+    background-color: #e04d2ce8;
+}
+
+.con3{
+     
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+.con3 hr{
+    position: absolute;
+    top: 34px;
+    left: 597px;
+    border: #ffffff 4px solid;
+    border-bottom: none;
+    width: 20%;
+}
+button{
+    height: 50px;
+    width: 300px;
+    color: #df6101;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: white;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.con3{
+    margin-top: 38px;
+}
+
+p{
+    padding: 10px 30px 10px 30px;
+}
+/* box3 end */
+ /*........................................................................................................................................................................*/ 
+
+
+
+/* box4 start */
+.cont4{
+    background-color: rgb(219, 226, 232);
+}
+.con4{
+     display: grid;
+     grid-template-columns: 3fr 1fr 3fr;
+     grid-gap: 20px;
+     
+}
+
+.con4 img{
+    height: 200px;
+    width: 200px;
+}
+.subcon{
+    background-color: rgb(255, 255, 255);
+    text-align: center; 
+    height: 500px;
+    width: 300px;
+    padding: 0 5px 0 5px;
+    margin: 20px 0 20px 0;
+     
+}
+
+.subcon1{
+    margin-left: 268px;
+    
+}
+
+ .subcon h2{
+    color: #df6101;
+    font-weight: bolder;
+ }
+.subcon3{
+    margin-right: 174px;
+}
+ 
+/* box4 end */
+ /*........................................................................................................................................................................*/ 
+
+
+ 
+ /* box5 start */
+
+ .cont5{
+    background-color: #e04d2ce8;
+ }
+ .con5{
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+ }
+
+ .con5 hr{
+    position: absolute;
+    top: 54px;
+    left: 597px;
+    border: #ffffff 4px solid;
+    border-bottom: none;
+    width: 20%;
+}
+ /* box5 end */
+  /*........................................................................................................................................................................*/ 
+
+
+  
+ 
