@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="signUp.css">
+
+    <!-- J-Querry Library -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous">
+        </script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <div class="cointainer-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">DONATETHEBLOOD</a>
+            <!-- On shrink of page -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav  ml-auto">
+                    <!-- Nav bar items -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Donors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">DonorsName</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <!-- Sign Up -->
+    <div class="row">
+        <div class="col-md-6 form-cointainer">
+            <h3>SignUp</h3>
+            <hr class="red-line">
+            <form>
+      
+        <div class = "form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Full Name" required>
+                
+        
+            </div>
+            <div class = "form-group">
+                <label for="bloodgrp">Blood Group</label>
+                <select class="form-control demo-default" name="bloodgroup" id="bloodgrp">
+                    <option value="">----Select Your Blood Group----</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+
+
+                </select>
+               
+            </div>
+        <div class = "form-inline">        
+        <label for="gender">Gender</label>
+                <div class="form-check form-check-inline inline-input">
+                    <input class="form-check-input form-control" type="radio" id="male" name="gender" value="male" checked >
+                    <label class="form-check-label" for="male">male</label>
+                </div>
+           
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input form-control" type="radio" id="female" name="gender" value="female">
+                    <label class="form-check-label" for="female">female</label>
+                </div>
+            </div>
+
+                <div class="form-inline">
+                    <label for="dateOfBirth" >Date Of Birth </label> 
+                    <input class = "form-control demo-default inline-input" type="date" id="dateOfBirth" required>
+
+                </div>
+
+                <div class = "form-inline">
+                    <label for="contact">Contact Number</label>
+                    <input class = "form-control inline-input" type="text" name = "contact_no" id="contact" placeholder="Contact Number" required>
+
+                </div>
+                <div class = "form-group">
+                    <label for="district">Blood Group</label>
+                    <select class="form-control demo-default" name="district-name" id="district">
+                        <option value="">----Select----</option>
+                        <option value="north-west-delhi">North West Delhi</option>
+                        <option value="north-delhi">North Delhi</option>
+                        <option value="north-east-delhi">North East Delhi</option>
+                        <option value="central-delhi">Central Delhi</option>
+                        <option value="south-west-delhi">South-West</option>
+                        <option value="south-delhi">South-Delhi</option>
+                        <option value="south-east-delhi">South-East-Delhi</option>
+    
+    
+                    </select>
+                   
+                </div>
+                <div class = "form-group">
+                    <label for = "emailInput">Email address</label>
+                    <input type="email" class = "form-control" id = "emailInput " placeholder = "Email address" required>
+                </div>
+                
+                <div class = "form-group">
+                    <label for = "passwordInput">Password</label>
+                    <input type="password" class = "form-control" id = "passwordInput" placeholder = "Password" required >
+                </div>
+
+                <div class = "form-group">
+                    <label for = "confirmPasswordInput">Confirm Password</label>
+                    <input type="password" class = "form-control" id = "confirmPasswordInput" placeholder = "Confirm Password" required >
+                </div>
+
+                <div class = "form-inline">
+                    <input type="checkbox"  id = "term" name="term-condition" checked style = "margin-left: 2px;">
+
+                    <label for="term">By checking the box, I am agree to donate my blood and show my name,contact and &nbsp  e-mail in blood donor list</label>
+
+                    <button type = "button" id ="submit" class = "btn btn-danger btn-lg center-aligned">Sign Up</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src = "signUp.js"></script>
+</body>
