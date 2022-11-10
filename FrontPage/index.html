@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOOD DONATION SYSTEM</title>
-    <link rel="stylesheet" href="style.css">
+    <title> BLOOD DONATION SYSTEM </title>
+    <link rel="stylesheet" href="/home/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
     <link rel=”stylesheet” href=”https://fonts.googleapis.com/icon?family=Material+Icons”> -->
@@ -19,14 +20,14 @@
             <div class="con1 con ">
             
                 <nav class=" NAVBAR ">
-                   <H4>DONATETHEBLOOD</H4>
+                   <H4> DONATETHEBLOOD </H4>
                    <ul>
-                       <li><a href="http://" target="_blank" >Home</a></li>
-                       <li><a href="http://" target="_blank" >Donor</a></li>
-                       <li><a href="http://" target="_blank" >Search</a></li>
-                       <li><a href="http://" target="_blank" >Sign in</a></li>
-                       <li><a href="http://" target="_blank" >About Us</a></li>
-                       <li><a href="http://" target="_blank" >Donor names</a></li>
+                       <li><a href="/home" target="_blank" >Home</a></li>
+                       <li><a href="/signup"> Be a Donor </a></li>
+                       <li><a href="#" target="_blank"> Search</a></li>
+                       <li><a href="/signin" target="_blank" >Sign in</a></li>
+                       <li><a href="#" target="_blank" >About Us</a></li>
+                       <!-- <li><a href="#" target="_blank" >Donor names</a></li> -->
                    </ul>
                 </nav>
            </div>
@@ -34,7 +35,7 @@
         </div>
 
         <div class="cont2">
-            <div class="con2  con ">
+            <form class="con2  con " method="POST" action="/home">
                 <h1 id="main" >Donate the blood, save the life</h1>
                 <p>Donate the blood to help the others.</p>
 
@@ -78,10 +79,67 @@
                    </select>
                </div>
 
-               <input type="button" value="submit" class="btn-submit" >
+               <input type="button" value="submit" class="btn-submit" id="inpbtn" style="cursor:pointer" />
            
-           </div>
+           </form>
         </div>
+
+        <script>
+
+            const inpbtn = document.querySelector('#inpbtn')
+
+            inpbtn.onclick = async (e) => {
+
+                e.preventDefault()
+
+                const form = document.querySelectorAll('form select')
+                console.log( form )
+
+                const obj = {}
+
+                for(let i = 0; i < 2; i++)
+                    obj[`inp${i+1}`] = form[i].value
+                // console.log(obj)
+
+                const d = JSON.stringify(obj)
+                console.log(d)
+
+                localStorage.setItem('donorQuery',d)
+
+                const a = document.createElement('a')
+                a.href = '/donors'
+
+                a.click()
+
+
+                // const con2 = document.querySelector('.cont2')
+
+                // const container = document.createElement('div')
+                // container.style.display = "flex"
+                // // container.style.margin = "0 20px"
+
+                // let t = 20
+                // data.forEach(d => {
+
+                //     const div = document.createElement('div')
+                //     div.innerText = JSON.stringify(d)
+
+                //     div.style.position = "absolute"
+                //     div.style.top = "450px"
+                //     // div.style.left = `${t}px`
+                //     // div.style.transform = "translateX(-50%)"
+                //     div.style.width = "25%"
+                //     div.style.margin = "0 20px"
+
+                //     container.append(div)
+
+                //     t += 200
+                // })
+                // con2.append(container)
+
+            }
+        
+        </script>
 
         <div class="cont3">
             
@@ -94,7 +152,7 @@
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique itaque nobis accusamus amet numquam rerum, provident quaerat suscipit ullam, qui nisi ad perferendis dolores, ab enim voluptates. Veritatis laboriosam, nihil ipsa ipsam voluptas qui itaque eos, laborum eaque vitae libero commodi quis provident hic ducimus nostrum aliquam debitis placeat! Impedit porro quisquam delectus, eius explicabo fugiat consectetur officia animi asperiores iste modi sunt corporis provident minima optio quaerat commodi sapiente. Alias, autem in delectus nemo ipsum magnam dignissimos unde sunt commodi natus! Sit nam, ipsa error facere voluptates rem sunt unde earum provident sequi assumenda! At eius aspernatur recusandae assumenda?
                   </p>
             
-            <button type="submit">Become A Live Saver!</button>
+            <button type="submit"> <a href="/signup" style="text-decoration: none;" > Become A Live Saver! </a> </button>
         </div>
 
         </div>
@@ -144,14 +202,7 @@
                         HELLO@gmail.com <i class="fa fa-envelope"></i>  </p>
                     </div>
                </div>
-        </div>
-
-            
-           
- 
-           
-
-          
+        </div>          
 
     </div>
      

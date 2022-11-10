@@ -10,9 +10,6 @@
     <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-
-  
-
 </head>
 <body>
             
@@ -31,25 +28,25 @@
             <ul class="navbar-nav  ml-auto">
                 <!-- Nav bar items -->
               <li class="nav-item">
-                <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="/home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Donate</a>
+                <a class="nav-link" href="/signup">Donate</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Donors</a>
+                <a class="nav-link" href="/signup">Be a Donor</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Search</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">SignIn</a>
+                <a class="nav-link" href="/signin">SignIn</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Donors name</a>
+                <!-- <a class="nav-link" href="">Donors name</a> -->
               </li>
   
   
@@ -62,8 +59,10 @@
         <!-- Sign In -->
         <div class = "form-cointainer">
             <h3>Sign In</h3>
+
             <hr class ="red-line">
-            <form>
+            
+            <form method="POST" action="/signin">
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                   <input type="email" id="emailInput" class="form-control" placeholder="Email address" required = "required" />
@@ -76,13 +75,11 @@
                     <label class="form-label" for="passwordInput"></label>
                   </div>
 
-                <button type = "button" class = "btn btn-danger btn-block mb-4 disabled">Sign In</button>
-
+                <button type = "button" class = "btn btn-danger btn-block mb-4 disabled" id='formbtn'> Sign In </button>
             </form>
-              
-
+        
         </div>
 
-<script src = "signin.js"></script>
+        <script src = "signin.js"></script>
 </body>
 </html>

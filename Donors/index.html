@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Donors </title>
+</head>
+<body>
+	
+	<h> Donors </h>
+
+	<div> </div>
+
+	<script>
+
+        (async () => {
+
+        	const d = localStorage.getItem('donorQuery')
+            console.log(d , typeof d)
+           
+	        let h = new Headers();
+	        h.append("Content-Type","application/json")
+
+	        let req = new Request("http://localhost:3000/home" , {
+	            method: 'POST',
+	            body: d,
+	            headers: h,
+	            credentials: 'include' 
+	        });
+	        let res = await fetch(req)
+	        const data = await res.json()
+
+	        console.log(typeof data)
+
+            if(data.length !== 0)
+		        document.querySelector('div').innerText = JSON.stringify(data)
+             
+            else
+		        document.querySelector('div').innerText = "No donors in this district for this blood group yet . Please check website reqularly for updates ."
+
+	        localStorage.clear()
+        })()
+
+	</script>
+
+</body>
+</html>
